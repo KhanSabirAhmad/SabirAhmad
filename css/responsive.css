@@ -1,0 +1,38 @@
+/* ===========================================================
+   responsive.css — breakpoint refinements
+   =========================================================== */
+
+@media(max-width:1024px){
+  .hero-stats{ gap:26px; }
+  .footer-grid{ gap:28px; }
+}
+
+@media(max-width:900px){
+  .contact-grid{ gap:32px; }
+  .hero-visual{ order:-1; }
+}
+
+@media(max-width:768px){
+  section{ padding:64px 0; }
+  .section-sub{ margin-bottom:32px; }
+  .hero-ctas .btn{ width:100%; justify-content:center; }
+  .cta-actions .btn{ width:100%; justify-content:center; }
+  .counter-strip{ padding:28px 18px; }
+  .counter-item .count{ font-size:28px; }
+}
+
+@media(max-width:520px){
+  .container{ padding:0 18px; }
+  .hero-stats{ gap:20px; }
+  .hero-stat .num{ font-size:24px; }
+  .logo span.text{ font-size:16px; }
+  .back-to-top{ right:16px; bottom:16px; width:42px; height:42px; }
+  .cta-banner{ padding:40px 22px; }
+  .page-hero{ padding:150px 0 50px; }
+}
+
+/* Print styles for resume-friendly pages */
+@media print{
+  .site-header, .site-footer, .back-to-top, .mobile-menu, .loader{ display:none !important; }
+  body{ background:#fff; color:#111; }
+}
